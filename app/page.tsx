@@ -352,6 +352,7 @@ export default function Home() {
                   <li>One (1) dramatic playlist dedicated to Tee</li>
                   <li>Chocolate tribute and/or snack taxes paid on time</li>
                   <li>Me, being obsessed with you in 4K</li>
+                  <li>And two more Valentine perks that I can't even think of right now</li>
                 </ul>
               </div>
 
