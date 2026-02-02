@@ -214,7 +214,7 @@ export default function Home() {
   const taunt = noTaunts[Math.min(noCount, noTaunts.length - 1)]!;
 
   return (
-    <div className="relative min-h-[100svh] overflow-hidden bg-[radial-gradient(1200px_800px_at_15%_10%,#ff4d8d22,transparent_60%),radial-gradient(900px_700px_at_85%_15%,#7c3aed26,transparent_55%),radial-gradient(1100px_900px_at_50%_90%,#fb718526,transparent_55%),linear-gradient(180deg,#09090b, #0b1020 55%, #09090b)]">
+    <div className="relative min-h-[100svh] overflow-hidden bg-[radial-gradient(1200px_800px_at_15%_10%,#ff4d8d22,transparent_60%),radial-gradient(900px_700px_at_85%_15%,#7c3aed26,transparent_55%),radial-gradient(1100px_900px_at_50%_90%,#fb718526,transparent_55%),linear-gradient(180deg,#fff1f4,#ffffff_55%,#f5f3ff)] dark:bg-[radial-gradient(1200px_800px_at_15%_10%,#ff4d8d22,transparent_60%),radial-gradient(900px_700px_at_85%_15%,#7c3aed26,transparent_55%),radial-gradient(1100px_900px_at_50%_90%,#fb718526,transparent_55%),linear-gradient(180deg,#09090b,#0b1020_55%,#09090b)]">
       <div className="pointer-events-none absolute inset-0 z-0">
         {floating.map((t) => (
           <span
@@ -241,21 +241,21 @@ export default function Home() {
       <div className="absolute left-1/2 top-[65%] h-[34rem] w-[34rem] -translate-x-1/2 rounded-full bg-violet-500/15 blur-3xl" />
 
       <main className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-xl flex-col items-center justify-center px-4 py-10">
-        <div className="w-full rounded-[28px] border border-white/10 bg-white/8 p-5 shadow-[0_20px_80px_-30px_rgba(0,0,0,0.8)] backdrop-blur-xl sm:p-7">
+        <div className="w-full rounded-[28px] border border-black/10 bg-black/5 p-5 shadow-[0_20px_80px_-30px_rgba(0,0,0,0.8)] backdrop-blur-xl dark:border-white/10 dark:bg-white/8 sm:p-7">
           <div className="flex items-center justify-between gap-3">
-            <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs font-semibold tracking-wide text-white/90">
+            <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/5 px-3 py-1 text-xs font-semibold tracking-wide text-black/90 dark:border-white/10 dark:bg-white/10 dark:text-white/90">
               <span className="inline-block h-2 w-2 rounded-full bg-rose-400 shadow-[0_0_18px_rgba(251,113,133,0.8)]" />
               Valentine Protocol
             </div>
-            <div className="text-xs font-semibold text-white/60">For Tee only</div>
+            <div className="text-xs font-semibold text-black/60 dark:text-white/60">For Tee only</div>
           </div>
 
           {stage === "ask" ? (
             <div className="mt-6">
-              <h1 className="text-balance text-4xl font-black leading-[1.05] tracking-tight text-white">
+              <h1 className="text-balance text-4xl font-black leading-[1.05] tracking-tight text-black dark:text-white">
                 Tee… I have a very serious question.
               </h1>
-              <p className="mt-3 text-pretty text-base leading-7 text-white/75">
+              <p className="mt-3 text-pretty text-base leading-7 text-black/75 dark:text-white/75">
                 Hello my beautiful, curvy, sexy short queen, you have the kind of beauty that makes a room
                 feel softer just because you walked in, your poor eyesight and constant use of glasses are one of my favorite detail btw (wink wink), but my favourite
                 without a doubt (also what I first noticed about you) is your beautiful "Tea-like" skin glow,
@@ -263,12 +263,12 @@ export default function Home() {
                 you make the ordinary feel like a secret I get to keep. (Unlike you that'll always tell your secrets to me the next day #snitch 😂😂)
               </p>
 
-              <div className="mt-6 rounded-2xl border border-white/10 bg-black/20 p-4">
-                <div className="text-sm font-semibold text-white/70">Said serious question:</div>
-                <div className="mt-1 text-pretty text-2xl font-extrabold tracking-tight text-white">
+              <div className="mt-6 rounded-2xl border border-black/10 bg-black/5 p-4 dark:border-white/10 dark:bg-black/20">
+                <div className="text-sm font-semibold text-black/70 dark:text-white/70">Said serious question:</div>
+                <div className="mt-1 text-pretty text-2xl font-extrabold tracking-tight text-black dark:text-white">
                   Will you be my Valentine?👀
                 </div>
-                <div className="mt-2 text-sm text-white/60">
+                <div className="mt-2 text-sm text-black/60 dark:text-white/60">
                   Choose wisely. I have prepared unnecessary levels of romance.
                 </div>
               </div>
@@ -304,7 +304,7 @@ export default function Home() {
                   onPointerEnter={() => {
                     if (window.matchMedia("(hover: hover)").matches) triggerNo();
                   }}
-                  className="absolute left-0 top-0 touch-none rounded-2xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-bold text-white/85 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)] backdrop-blur-md transition-transform active:scale-[0.98]"
+                  className="absolute left-0 top-0 touch-none rounded-2xl border border-black/15 bg-black/5 px-5 py-3 text-sm font-bold text-black/85 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)] backdrop-blur-md transition-transform active:scale-[0.98] dark:border-white/15 dark:bg-white/10 dark:text-white/85"
                   style={{
                     transform: `translate3d(${noPos.x}px, ${noPos.y}px, 0)`,
                   }}
@@ -314,22 +314,22 @@ export default function Home() {
               </div>
 
               <div className="mt-3 flex items-start justify-between gap-3">
-                <div className="text-sm text-white/70">{taunt}</div>
-                <div className="text-xs font-semibold text-white/50 tabular-nums">
+                <div className="text-sm text-black/70 dark:text-white/70">{taunt}</div>
+                <div className="text-xs font-semibold text-black/50 tabular-nums dark:text-white/50">
                   No attempts: {noCount}
                 </div>
               </div>
 
               <div className="mt-6 grid grid-cols-2 gap-3">
-                <div className="rounded-2xl border border-white/10 bg-white/6 p-4">
-                  <div className="text-xs font-semibold text-white/55">Includes</div>
-                  <div className="mt-1 text-sm font-semibold text-white/85">
+                <div className="rounded-2xl border border-black/10 bg-black/4 p-4 dark:border-white/10 dark:bg-white/6">
+                  <div className="text-xs font-semibold text-black/55 dark:text-white/55">Includes</div>
+                  <div className="mt-1 text-sm font-semibold text-black/85 dark:text-white/85">
                     Hugs, snacks, and “I love you” spam
                   </div>
                 </div>
-                <div className="rounded-2xl border border-white/10 bg-white/6 p-4">
-                  <div className="text-xs font-semibold text-white/55">Side effects</div>
-                  <div className="mt-1 text-sm font-semibold text-white/85">
+                <div className="rounded-2xl border border-black/10 bg-black/4 p-4 dark:border-white/10 dark:bg-white/6">
+                  <div className="text-xs font-semibold text-black/55 dark:text-white/55">Side effects</div>
+                  <div className="mt-1 text-sm font-semibold text-black/85 dark:text-white/85">
                     Blushing, giggles, sudden happiness
                   </div>
                 </div>
@@ -337,17 +337,17 @@ export default function Home() {
             </div>
           ) : (
             <div className="mt-6">
-              <h1 className="text-balance text-4xl font-black leading-[1.05] tracking-tight text-white">
+              <h1 className="text-balance text-4xl font-black leading-[1.05] tracking-tight text-black dark:text-white">
                 She said yes.
               </h1>
-              <p className="mt-3 text-pretty text-base leading-7 text-white/75">
+              <p className="mt-3 text-pretty text-base leading-7 text-black/75 dark:text-white/75">
                 Tee, you just made me the luckiest person on the internet. Please accept this
                 legally-binding bundle of love, kisses, and extremely embarrassing admiration.
               </p>
 
-              <div className="mt-6 rounded-2xl border border-white/10 bg-white/8 p-5">
-                <div className="text-sm font-semibold text-white/70">Your Valentine perks:</div>
-                <ul className="mt-3 space-y-2 text-sm text-white/75">
+              <div className="mt-6 rounded-2xl border border-black/10 bg-black/5 p-5 dark:border-white/10 dark:bg-white/8">
+                <div className="text-sm font-semibold text-black/70 dark:text-white/70">Your Valentine perks:</div>
+                <ul className="mt-3 space-y-2 text-sm text-black/75 dark:text-white/75">
                   <li>Unlimited forehead kisses (terms & conditions: you must exist nearby)</li>
                   <li>One (1) dramatic playlist dedicated to Tee</li>
                   <li>Chocolate tribute and/or snack taxes paid on time</li>
@@ -360,7 +360,7 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={reset}
-                  className="w-full rounded-2xl border border-white/15 bg-white/10 px-5 py-3 text-sm font-bold text-white/85 backdrop-blur-md transition-colors hover:bg-white/15 active:scale-[0.99]"
+                  className="w-full rounded-2xl border border-black/15 bg-black/5 px-5 py-3 text-sm font-bold text-black/85 backdrop-blur-md transition-colors hover:bg-black/10 active:scale-[0.99] dark:border-white/15 dark:bg-white/10 dark:text-white/85 dark:hover:bg-white/15"
                 >
                   Replay the chaos
                 </button>
@@ -369,7 +369,7 @@ export default function Home() {
           )}
         </div>
 
-        <div className="mt-6 text-center text-xs font-semibold text-white/45">
+        <div className="mt-6 text-center text-xs font-semibold text-black/45 dark:text-white/45">
           Made with questionable confidence and a lot of love.
         </div>
       </main>

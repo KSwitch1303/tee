@@ -15,7 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tee, will you be my Valentine?",
   description: "A tiny, ridiculous, romantic question for Tee.",
-  themeColor: "#0a0a0a",
 };
 
 export default function RootLayout({
