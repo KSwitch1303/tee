@@ -257,7 +257,7 @@ export default function Home() {
               </h1>
               <p className="mt-3 text-pretty text-base leading-7 text-white/75">
                 Hello my beautiful, curvy, sexy short queen, you have the kind of beauty that makes a room
-                feel softer just because you walked in, your poor eyesight and constant use of glasses are one of my favorite detail (wink wink), but my favourite
+                feel softer just because you walked in, your poor eyesight and constant use of glasses are one of my favorite detail btw (wink wink), but my favourite
                 without a doubt (also what I first noticed about you) is you beautiful "Tea-like" skin glow,
                 that light‑chocolate warmth that makes me want to get closer and stay there (probably licking, kissing, sniffing and "hugging" you. hehe). Every day
                 you make the ordinary feel like a secret I get to keep. (Unlike you that'll always tell your secrets to me the next day #snitch 😂😂)
